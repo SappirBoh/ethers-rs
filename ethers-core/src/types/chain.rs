@@ -132,6 +132,7 @@ pub enum Chain {
     Chiado = 10200,
 
     Oasis = 26863,
+    OasisSapphire = 23294,
 
     Emerald = 42262,
     EmeraldTestnet = 42261,
@@ -326,6 +327,7 @@ impl Chain {
             Evmos | EvmosTestnet => 1_900,
             Aurora | AuroraTestnet => 1_100,
             Oasis => 5_500,
+            OasisSapphire => 5_500,
             Emerald => 6_000,
             Dev | AnvilHardhat => 200,
             Celo | CeloAlfajores | CeloBaklava => 5_000,
@@ -421,6 +423,7 @@ impl Chain {
             Zora |
             ZoraGoerli |
             ZoraSepolia |
+            OasisSapphire |
             Degen => false,
 
             // Unknown / not applicable, default to false for backwards compatibility
@@ -567,6 +570,8 @@ impl Chain {
             Rsk => ("https://blockscout.com/rsk/mainnet/api", "https://blockscout.com/rsk/mainnet"),
 
             Oasis => ("https://scan.oasischain.io/api", "https://scan.oasischain.io/"),
+
+            OasisSapphire => ("https://explorer.oasis.io/mainnet/sapphire/api", "https://explorer.oasis.io/mainnet/sapphire/"),
 
             Emerald => {
                 ("https://explorer.emerald.oasis.dev/api", "https://explorer.emerald.oasis.dev/")
@@ -733,6 +738,7 @@ impl Chain {
             Sokol |
             Poa |
             Oasis |
+            OasisSapphire |
             Emerald |
             EmeraldTestnet |
             Evmos |
