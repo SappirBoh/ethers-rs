@@ -59,6 +59,7 @@ pub enum Chain {
     Kovan = 42,
     Holesky = 17000,
     Sepolia = 11155111,
+    Hoodi = 560048,
 
     Optimism = 10,
     OptimismKovan = 69,
@@ -339,7 +340,7 @@ impl Chain {
             Elastos => 5_000,
             Degen => 622,
             // Explicitly exhaustive. See NB above.
-            Morden | Ropsten | Rinkeby | Goerli | Kovan | Sepolia | Holesky | Moonbase |
+            Morden | Ropsten | Rinkeby | Goerli | Kovan | Sepolia | Holesky | Hoodi | Moonbase |
             MoonbeamDev | OptimismKovan | Poa | Sokol | Rsk | EmeraldTestnet | Boba | Base |
             BaseGoerli | BaseSepolia | Blast | BlastSepolia | ZkSync | ZkSyncTestnet |
             PolygonZkEvm | PolygonZkEvmTestnet | Metis | Linea | LineaTestnet | Mantle |
@@ -395,6 +396,7 @@ impl Chain {
             Goerli |
             Sepolia |
             Holesky |
+            Hoodi |
             Base |
             BaseGoerli |
             BaseSepolia |
@@ -476,6 +478,7 @@ impl Chain {
             Goerli => ("https://api-goerli.etherscan.io/api", "https://goerli.etherscan.io"),
             Sepolia => ("https://api-sepolia.etherscan.io/api", "https://sepolia.etherscan.io"),
             Holesky => ("https://api-holesky.etherscan.io/api", "https://holesky.etherscan.io"),
+            Hoodi => ("https://api-hoodi.etherscan.io/api", "https://hoodi.etherscan.io"),
 
             Polygon => ("https://api.polygonscan.com/api", "https://polygonscan.com"),
             PolygonMumbai => {
@@ -683,6 +686,7 @@ impl Chain {
             Rinkeby |
             Goerli |
             Holesky |
+            Hoodi |
             Optimism |
             OptimismGoerli |
             OptimismKovan |
