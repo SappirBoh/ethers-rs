@@ -15,7 +15,7 @@ pub const MULTICALL_SUPPORTED_CHAIN_IDS: &[u64] = {
     &[
         Mainnet as u64,                  // Mainnet
         Holesky as u64,                  // Holesky
-        Hoodin as u64,                   // Hoodi
+        Hoodi as u64,                   // Hoodi
         Kovan as u64,                    // Kovan
         Rinkeby as u64,                  // Rinkeby
         Goerli as u64,                   // Görli
