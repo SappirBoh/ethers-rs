@@ -59,6 +59,7 @@ pub enum Chain {
     Kovan = 42,
     Holesky = 17000,
     Sepolia = 11155111,
+    
     Hoodi = 560048,
 
     Optimism = 10,
